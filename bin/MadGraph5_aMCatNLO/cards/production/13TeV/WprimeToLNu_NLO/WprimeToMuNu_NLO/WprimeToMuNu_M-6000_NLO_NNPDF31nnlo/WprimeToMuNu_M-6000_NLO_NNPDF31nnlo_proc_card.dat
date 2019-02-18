@@ -1,0 +1,4 @@
+import model VPrime_NLO
+generate p p > wp+ > mu+ vm [QCD]
+add process p p > wp- > mu- vm~ [QCD]
+output WprimeToMuNu_M-6000_NLO_NNPDF31nnlo  -nojpeg
