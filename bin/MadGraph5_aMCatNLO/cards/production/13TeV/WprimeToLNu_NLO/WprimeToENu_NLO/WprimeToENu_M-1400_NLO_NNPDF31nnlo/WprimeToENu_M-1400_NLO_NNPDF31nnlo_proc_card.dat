@@ -1,0 +1,4 @@
+import model VPrime_NLO
+generate p p > wp+ > e+ ve [QCD]
+add process p p > wp- > e- ve~ [QCD]
+output WprimeToENu_M-1400_NLO_NNPDF31nnlo  -nojpeg
