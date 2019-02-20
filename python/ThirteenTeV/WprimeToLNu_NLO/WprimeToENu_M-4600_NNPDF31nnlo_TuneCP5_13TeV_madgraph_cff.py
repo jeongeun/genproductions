@@ -1,7 +1,7 @@
 import FWCore.ParameterSet.Config as cms
 
 externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
-    args = cms.vstring('/afs/cern.ch/work/j/jelee/public/tarballs/WprimeToENu/WprimeToENu_M-1000_NLO_NNPDF31nnlo_slc6_amd64_gcc630_CMSSW_9_3_8_tarball.tar.xz'),
+    args = cms.vstring('/afs/cern.ch/work/j/jelee/public/tarballs/WprimeToENu/WprimeToENu_M-4600_NLO_NNPDF31nnlo_slc6_amd64_gcc630_CMSSW_9_3_8_tarball.tar.xz'),
     nEvents = cms.untracked.uint32(20000),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
@@ -26,7 +26,7 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
         processParameters = cms.vstring(
             'PDF:pSet = LHAPDF6:NNPDF31_nnlo_as_0118_nf_4',
             'NewGaugeBoson:ffbar2Wprime = on',
-            '34:m0 = 1000',
+            '34:m0 = 4600',
             '34:onMode = off',
             '34:onIfAny = 11,12',
             ),
